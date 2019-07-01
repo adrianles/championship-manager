@@ -1,0 +1,4 @@
+- In JS a semicolon will always be used at the end of the instruction.
+- In JS double quotes will have preference over single quotes for literal strings.
+
+If you cannot find here the rule you are looking for, please fallback to PSR-2 (https://www.php-fig.org/psr/psr-2/).

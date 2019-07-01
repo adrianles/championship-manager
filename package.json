@@ -1,0 +1,27 @@
+{
+  "name": "championship-manager",
+  "version": "0.1.0",
+  "description": "Electron app for offline championship management",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianles/championship-manager.git"
+  },
+  "keywords": [
+    "electron",
+    "championship",
+    "management"
+  ],
+  "author": "lesauz@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianles/championship-manager/issues"
+  },
+  "homepage": "https://github.com/adrianles/championship-manager#readme",
+  "devDependencies": {
+    "electron": "^5.0.6"
+  }
+}
