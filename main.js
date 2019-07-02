@@ -15,6 +15,7 @@ function createWindow()
         },
         icon: path.join(__dirname, "assets/icons/png/1024x1024.png")
     });
+    win.maximize();
     win.loadFile("index.html")
 
     // Open the DevTools.

@@ -2,12 +2,34 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Hello World!</title>
+
+        <link rel="stylesheet" href="./assets/css/bootstrap-4.3.1_darkly.min.css" />
+        <link rel="stylesheet" href="./assets/css/glyphicons.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+
+        <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="./assets/js/popper-1.14.7.min.js"></script>
+        <script src="./assets/js/bootstrap-4.3.1.min.js"></script>
+
+        <title data-cm-i18n>Championship manager</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        We are using node <script>document.write(process.versions.node)</script>,
-        Chrome <script>document.write(process.versions.chrome)</script>,
-        and Electron <script>document.write(process.versions.electron)</script>.
+        <div class="view"></div>
+        <div class="fixed-top cm-options">
+            <span class="glyphicon glyphicon-cog clickable" aria-hidden="true"></span>
+        </div>
+        <div class="cm-content">
+        </div>
+        <div class="container">
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action active">
+                  Cras justo odio
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+                <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+                <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+            </div>
+        </div>
     </body>
 </html>
