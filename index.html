@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="./assets/css/dijit-themes-1.15.0/flat/flat.css" />
         <link rel="stylesheet" href="./assets/css/base.css" />
 
+        <title data-cm-i18n>Championship manager</title>
+
+        <script src="./assets/js/twigjs-1.13.3/twig.min.js"></script>
         <script>
             //so the require by dojo and the one by node do not clash
             window.nodejsRequire = require;
@@ -29,28 +32,29 @@
             };
         </script>
         <script src="./assets/js/dojo-release-1.15.0/dojo/dojo.js"></script>
-
-        <title data-cm-i18n>Championship manager</title>
     </head>
     <body class="flat">
-        <div>
-            <span class="glyphicon glyphicon-cog clickable" aria-hidden="true"></span>
-        </div>
-        <div>
-            <input type="text" data-dojo-type="dijit/form/TextBox" />
-        </div>
-        <div class="container">
-            <div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action">Cras justo odio</button>
-                <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
-                <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
-                <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
-                <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+
+        <div id="championshipView" data-dojo-type="dojox/mobile/View">
+            <div class="container">
+                <div class="btn-group" role="group">
+                    <button id="newChampionshipButton" class="btn btn-outline-primary" data-cm-i18n>New championship</button>
+                </div>
+                <div id="championshipList" class="list-group">
+                    <span>loading...</span>
+                </div>
             </div>
-        </div>
+        </div><!-- end championship view -->
 
         <script>
-            require(["dojo/parser", "dijit/form/TextBox"]);
+            require([
+                "dojo/parser",
+
+                "dojox/mobile/View",
+                "dijit/form/Button",
+                "dijit/form/TextBox"
+            ]);
+            require(["cm/main"]);
         </script>
     </body>
 </html>

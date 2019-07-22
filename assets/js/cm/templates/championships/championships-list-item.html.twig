@@ -1,0 +1,7 @@
+{% if championships|length > 0 %}
+    {% for championship in championships %}
+        <button class="list-group-item list-group-item-action championship" data-cm-itemid="{{ championship.getId() }}">{{ championship.getName() }}</button>
+    {% endfor %}
+{% else %}
+    <button class="list-group-item list-group-item-action" disabled data-cm-i18n>There is no championship</button>
+{% endif %}
